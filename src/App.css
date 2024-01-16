@@ -1,0 +1,149 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(135deg, rgb(93, 93, 124), rgb(161, 161, 186));
+    background: #30cc69;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+
+input {
+    background-color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    margin-top: 3rem;
+    width: 50rem;
+}
+
+::placeholder {
+    color: rgb(117, 114, 114);
+}
+
+
+p {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: .4rem;
+    width: 35rem;
+    position: relative;
+    padding: 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    cursor: pointer;
+
+    span {
+        padding: 1rem;
+        img{
+            padding-right: .5rem;
+        }
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        position: absolute;
+        left: 0;
+    }
+
+    .email {
+        font-size: 1.1rem;
+        position: absolute;
+        right: 0;
+        color: rgb(155, 149, 149);
+    }
+}
+
+
+.selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+   
+
+    span {
+        border: none;
+        border-radius: 1.75rem;
+        padding: .9rem .5rem;
+        background-color: #fff;
+        color: #30cc69;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+           img{
+            padding: 0 .5rem;
+            cursor: pointer;
+           }
+
+        .cancel {
+            color: black;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media(width<550px){
+   
+    input{
+        width: 38rem;
+    }
+
+    p {
+        width: 30rem;
+    }
+    p .name{
+        font-size:1rem ;
+    }
+    p .email{
+        font-size: .9rem;
+    }
+}
+
+@media(width<450px){
+    input{
+        width: 32rem;
+    }
+
+    p{
+        width: 25rem;
+    }
+    p .name{
+        font-size:.9rem ;
+    }
+    p .email{
+        font-size:.8rem ;
+    }
+}
